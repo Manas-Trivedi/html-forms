@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form action="./index.html" method="post">
+        <fieldset>
+            <legend>Add User</legend>
+            <label for="firstname">First Name </label>
+            <input type="text" name="First_Name" id="firstname">
+            <label for="lastname">Last Name </label>
+            <input type="text" name="Last_Name" id="lastname">
+            <label for="mail">E-Mail </label>
+            <input type="email" name="EMail" id="mail">
+            <label for="status">Status</label>
+            <select name="Status" id="status">
+                <option value="1">Student</option>
+                <option value="2">Teacher</option>
+                <option value="3">Guest</option>
+            </select>
+            <p><strong>Choose your favorite programming language: </strong></p>
+            <input type="radio" name="lang" id="html" value="html">
+            <label for="html">HTML</label>
+            <input type="radio" name="lang" id="css" value="css">
+            <label for="css">CSS</label>
+            <input type="radio" name="lang" id="js" value="js">
+            <label for="js">Javascript</label>
+            <label for="comments">Any Further Comments</label><br>
+            <textarea name="Comments" id="comments"></textarea>
+            <label for="date">Current Date </label>
+            <input type="date" name="date" id="date">
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <label for="newsletter">Sign Up for our Newsletter</label>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">Agree to <a href="#">Terms & Conditions</a></label>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
