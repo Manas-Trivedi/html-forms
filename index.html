@@ -8,37 +8,52 @@
 </head>
 <body>
     <h1>HTML Forms</h1>
-    <form action="./formHandle.php" method="post">
+    <form>
         <fieldset>
             <legend>Add User</legend>
-            <div><label for="firstname">First Name </label>
-            <input type="text" name="First_Name" id="firstname"></div>
-            <div><label for="lastname">Last Name </label>
-            <input type="text" name="Last_Name" id="lastname"></div>
-            <div><label for="mail">E-Mail </label>
-            <input type="email" name="EMail" id="mail"></div>
-            <div><label for="status">Status</label>
-            <select name="Status" id="status">
-                <option value="1">Student</option>
-                <option value="2">Teacher</option>
-                <option value="3">Guest</option>
-            </select></div>
-            <div><p><strong>Choose your favorite programming language: </strong></p>
-            <input type="radio" name="lang" id="html" value="html">
-            <label for="html">HTML</label>
-            <input type="radio" name="lang" id="css" value="css">
-            <label for="css">CSS</label>
-            <input type="radio" name="lang" id="js" value="js">
-            <label for="js">Javascript</label></div>
-            <div><label for="comments">Any Further Comments</label><br>
-            <textarea name="Comments" id="comments"></textarea></div>
-            <div><label for="date">Current Date </label>
-            <input type="date" name="date" id="date"></div>
-            <div><input type="checkbox" name="newsletter" id="newsletter">
-            <label for="newsletter">Sign Up for our Newsletter</label></div>
-            <div><input type="checkbox" name="terms" id="terms">
-            <label for="terms">Agree to <a href="#">Terms & Conditions</a></label></div>
-            <button type="submit">Submit</button>
+            <div class="colflex">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="First_Name" id="firstname">
+                <br>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="Last_Name" id="lastname">
+                <br>
+                <label for="mail">E-Mail:</label>
+                <input type="email" name="EMail" id="mail">
+                <br>
+                <div class="table">
+                    <label for="status">Status:</label>
+                    <label for="date">Date:</label>
+                    <select name="Status" id="status">
+                        <option value="1">Student</option>
+                        <option value="2">Teacher</option>
+                        <option value="3">Guest</option>
+                    </select>
+                    <input type="date" name="date" id="date">
+                </div>
+                <br>
+                <p>Choose your favorite language:</p>
+                <div class="rowflex">
+                    <input type="radio" name="lang" id="html" value="html">
+                    <label for="html">HTML</label>
+                    <input type="radio" name="lang" id="css" value="css">
+                    <label for="css">CSS</label>
+                    <input type="radio" name="lang" id="js" value="js">
+                    <label for="js">Javascript</label>
+                </div>
+                <br>
+                <label for="comments">Comments</label><br>
+                <textarea name="Comments" id="comments" row="8" cols="30"></textarea>
+                <br><br>
+                <div id="table2">
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">sign up for news</label>
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">agree to terms</a></label>
+                </div>
+                <br>
+                <button type="submit">Submit</button>
+            </div>
         </fieldset>
     </form>
 </body>
